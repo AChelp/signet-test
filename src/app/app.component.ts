@@ -16,8 +16,8 @@ export class AppComponent {
     return text
       .replace(/\n | \s\s+/g, ' ')
       .trim()
-      .replace(/[,"'\/#$%\^&\*;:{}=_`~<>()]|(\s)-(\s)/g, '')
-      .replace(/[!+|?+|.{2,}]/g, '.')
+      .replace(/[,"'\/#$%^&\*;:{}=_–`~<>()]|(\s)-(\s)/g, '')
+      .replace(/[!+|?|.{2,}]/g, '.')
       .split('.')
       .filter(sentence => sentence);
   }
