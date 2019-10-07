@@ -56,7 +56,7 @@
           <span>,</span>
           <span
             *ngFor="let i of ' '.repeat(maxSentenceLength).split(''); let j = index">
-              Word {{j + 1}},
+              Word {{j + 1}}{{j === maxSentenceLength - 1 ? '' : ','}}
             </span>
         </div>
 
